@@ -8,22 +8,25 @@
     @livewireStyles
 </head>
 <body class="bg-gradient-to-t from-[#235789] to-[#161925] text-white bg-no-repeat h-full overflow-hidden font-roboto-slab">
-    <nav class="sticky top-0 z-10 w-full"><!-- Sticky Navbar -->
-        <x-navbar/>
+    
+    <nav class="sticky top-0 z-10 w-full">
+        <x-navbar/><!-- Sticky Navbar -->
     </nav>
+    
+        <div class="transition-transform duration-500 relative lg:flex md:flex sm:flex  md:w-[23%] sm:w-[25%] hidden" id="sidebar">
+            <aside class="absolute h-screen" >
+                <x-sidebar/><!-- SIDEBAR -->
+            </aside>
+        </div>
+       
 
-    <aside class="md:absolute lg:absolute min-w-[200px] h-full bg-[#0F0F0F] bg-opacity-[65%] transition-transform duration-500
-    lg:w-[15%] lg:flex md:flex hidden" id="sidebar"> <!-- SIDEBAR -->
-          <x-sidebar/>
-      </aside>
-
-      <div id="content" class="ml-[15%] transition-all duration-500"> <!-- Main Content -->
-          <main class="m-8">
-              {{$slot}}
-          </main>
-      </div>
- 
-
+        <div class="flex h-screen"> <!--CONTENT CONTAINER-->
+            <div id="content" class="h-screen overflow-y-auto transition-all duration-500 ml-[20%]">
+                <main class="m-8">
+                    {{$slot}}  <!--CONTENT LOAD-->
+                </main>
+            </div>
+        </div>
 
     @livewireScripts
 </body>

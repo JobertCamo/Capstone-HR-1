@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         'roboto-slab': ['"Roboto Slab"', 'serif'],
       },
+      screens: {
+        'tb': {'min': '640px', 'max': '767px'}, // Custom breakpoint for 640px to 767px
+      },
     },
   },
   plugins: [
