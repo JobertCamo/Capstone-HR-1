@@ -8,9 +8,9 @@
         </ul>
         <!--RIGHT NAV-->
         <div class="flex flex-row items-center space-x-3 rightnav">
-                <x-heroicon-s-cog-6-tooth class="size-6"/>
-                <x-heroicon-s-inbox-stack class="size-6"/>
-                <img src="{{asset('images/sqaure.png')}}" alt="" class="rounded-full w-9">
+            <x-heroicon-s-cog-6-tooth class="size-6"/>
+            <x-heroicon-s-inbox-stack class="size-6"/>
+            <img src="{{asset('images/sqaure.png')}}" alt="" class="rounded-full w-9">
         </div>
     </div>
 </nav>

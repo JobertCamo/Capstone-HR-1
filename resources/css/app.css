@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes border-rotate {
+    0% {
+      border-color: rgba(255, 255, 255, 0);
+    }
+    50% {
+      border-color: rgba(255, 255, 255, 1);
+    }
+    100% {
+      border-color: rgba(255, 255, 255, 0);
+    }
+  }
+  
+  .animate-border-rotate:hover {
+    animation: border-rotate 0.5ms linear infinite;
+  }
+
+.side{
+    @apply p-3 my-2 duration-75 rounded-full hover:border-b-[1px] border-[#CBCBCB] ;
+}
+
+.title{
+    @apply p-1 my-2 text-xl font-bold;
+}
