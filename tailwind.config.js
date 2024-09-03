@@ -27,10 +27,16 @@ export default {
         'pglow':'0px 5px 20px 1px #26236b',
         'right-light': '5px 0px 15px rgba(32, 32, 32, 0.50)',
       },
+      colors:{
+        'navcolor':'#161925',
+        'lb':'#235789',
+        'db':'#161925',
+        'cb':'#CBCBCB',
+      },
     },
   },
   plugins: [
     // Uncomment if using DaisyUI
-    // require('daisyui'),
+    require('daisyui'),
   ],
 }

@@ -7,7 +7,7 @@
     @vite(['resources/js/app.js', 'resources/css/app.css'])
     @livewireStyles
 </head>
-<body class="bg-gradient-to-t from-[#235789] to-[#161925] text-[#CBCBCB] bg-no-repeat h-full overflow-hidden font-roboto">
+<body class="h-full overflow-hidden bg-no-repeat bg-gradient-to-t from-lb to-db text-cb font-roboto">
     
     <nav class="sticky top-0 z-10 w-full">
         <x-navbar/><!-- Sticky Navbar -->

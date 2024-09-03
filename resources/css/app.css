@@ -20,10 +20,43 @@
     animation: border-rotate 0.5ms linear infinite;
   }
 
-.side{
+/*.side{
     @apply p-3 my-2 duration-75 rounded-full hover:border-b-[1px] border-[#CBCBCB] ;
+}*/
+.side a{
+    @apply p-3 my-2 duration-75 rounded-md hover:bg-[#7c7c7c28] block;
 }
 
-.title{
-    @apply p-1 my-2 text-xl font-bold;
+.titlesidebar{
+    @apply p-1 my-2 text-xl font-bold border-b-[1px] border-[#CBCBCB] pb-[10px] border-opacity-50;
+}
+.inputs{
+  @apply w-full h-8 p-3 text-white bg-gray-600 rounded-md md:w-full lg:w-full hover:ring-2 hover:ring-slate-400 lg:h-8 md:h-5;
+}
+.sp{
+  @apply md:space-y-0 lg:space-y-2;
+}
+.drop{
+  @apply w-full bg-gray-600 border-0 rounded-md h-9 hover:ring-2 hover:ring-slate-400;
+}
+.card{
+  @apply w-full p-3 bg-black bg-opacity-50 rounded-md h-fit hover:ring-2 hover:ring-slate-50;
+}
+.jobtype{
+  @apply text-2xl font-bold hover:underline text-slate-50;
+}
+.dept{
+  @apply  my-1 text-slate-50 hover:underline opacity-80;
+}
+.smoldesc{
+  @apply mt-1 text-cb;
+}
+.time{
+  @apply self-end p-1 text-red-600 bg-gray-700 rounded-md w-fit h-fit;
+}
+.headsearch{
+  background-image: url(/public/images/bg.png);
+}
+.jobsortopt{
+  @apply w-[30%] p-1 bg-gray-300 rounded-2xl;
 }

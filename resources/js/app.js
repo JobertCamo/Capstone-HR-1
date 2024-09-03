@@ -7,7 +7,6 @@ window.toggleSidebar = function() {
 
     if (sidebar.classList.contains('translate-x-0')) {
         sidebar.classList.remove('translate-x-0');
-        sidebar.classList.remove('translate-x-0');
         sidebar.classList.add('-translate-x-full');
         mainContent.classList.remove('ml-[20%]');
     } else {
@@ -17,15 +16,20 @@ window.toggleSidebar = function() {
     }
 };
 
+// Ensure the sidebar starts visible on larger screens
 function adjustMargin() {
     const content = document.getElementById('content');
+    const sidebar = document.getElementById('sidebar');
+    
     if (window.innerWidth <= 639) {
         content.classList.remove('ml-[20%]');
+        sidebar.classList.add('-translate-x-full');
     } else {
         content.classList.add('ml-[20%]');
+        sidebar.classList.remove('-translate-x-full');
+        sidebar.classList.add('translate-x-0');
     }
 }
 
-// Run the function on page load and window resize
 window.addEventListener('load', adjustMargin);
 window.addEventListener('resize', adjustMargin);

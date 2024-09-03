@@ -1,5 +1,5 @@
 <nav>
-    <div class="flex bg-[#161925] h-16 items-center p-5 justify-between flex-row drop-shadow-md">
+    <div class="flex bg-[#161925] h-16 items-center p-5 justify-between flex-row drop-shadow-md cursor-pointer">
         <!--LEFTNAV-->
         <ul class="flex flex-row items-center space-x-1 Lightnav">
             <li><x-heroicon-s-bars-3 class="hidden size-6 lg:block md:block sm:block" onclick="toggleSidebar()"/></li>
