@@ -9,19 +9,19 @@
 </head>
 <body class="h-screen overflow-hidden bg-no-repeat bg-no-repea bg-gradient-to-t from-db to-lb text-cb font-roboto ">
     <nav>
-        <x-usernav/>
+        <x-usercomponent.usernav/>
     </nav>
     <main class="h-screen overflow-auto lg:flex md:flex "><!--Application-->
         <div class="w-full h-screen grow"><!--Container for 2 DIV-->
             <div class="flex-1 h-[50%] md:h-[60%]">
                 <div class="flex justify-center h-full">
                     <div class="w-full h-full ">  
-                        <x-jobscript/>
+                        <x-usercomponent.jobscript/>
                     </div>
                 </div>
             </div>
             <div class="flex justify-center flex-1 w-full mb-0 mt-[10%] h-fit xl:my-10">
-                <x-appform />
+                <x-usercomponent.appform />
             </div>
             <div class="w-full h-[20%] bg-black mt-[5%] bg-opacity-50 flex justify-between px-10">
                 <div>

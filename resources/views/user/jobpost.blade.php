@@ -9,13 +9,13 @@
 </head>
 <body class="h-full bg-no-repeat overflow-scrol bg-no-repea bg-gradient-to-t from-db to-lb text-cb font-roboto ">
     <nav>
-        <x-usernav/>
+        <x-usercomponent.usernav/>
     </nav>
     <div class="w-full h-[250px]"><!--HEAD SEARCH-->
-        <x-headsearch/>
+        <x-usercomponent.headsearch/>
     </div>
     <main class="w-full h-screen ">
-        <x-posting/>
+        <x-usercomponent.posting/>
     </main>
 </body>
 </html>
