@@ -14,5 +14,5 @@
                 <li class="side"><a wire:navigate href="{{ url('/onboard') }}">Recogniton Center</a></li>
                 <li class="side"><a wire:navigate href="{{ url('/onboard') }}">Access Learning</a></li>
             </ul>
-        </div>
+    </div>
 

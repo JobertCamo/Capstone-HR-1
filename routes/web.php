@@ -1,5 +1,6 @@
 <?php
 
+use Livewire\Volt\Volt;
 use Illuminate\Support\Facades\Route;
 
 
@@ -23,3 +24,7 @@ Route::get('/jobpost', function () {
 Route::get('/jobscript', function () {
     return view('user.jobscript');
 });
+
+Volt::route('job-create', 'hr.job-create');
+
+Volt::route('/job-result/{tag}', 'guest.job-result')->name('job-result');

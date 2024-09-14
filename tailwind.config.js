@@ -4,6 +4,10 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+    "./vendor/wireui/wireui/src/*.php",
+    "./vendor/wireui/wireui/ts/**/*.ts",
+    "./vendor/wireui/wireui/src/WireUi/**/*.php",
+    "./vendor/wireui/wireui/src/Components/**/*.php",
   ],
   theme: {
     extend: {
@@ -35,8 +39,10 @@ export default {
       },
     },
   },
-  plugins: [
-    // Uncomment if using DaisyUI
-    require('daisyui'),
+
+  presets: [
+    require("./vendor/wireui/wireui/tailwind.config.js")
   ],
+
+  plugins: [],
 }

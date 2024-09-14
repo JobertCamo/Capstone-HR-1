@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <wireui:scripts />
     @vite(['resources/js/app.js', 'resources/css/app.css'])
     @livewireStyles
 </head>
@@ -19,7 +20,7 @@
         </aside>
     </div>    
     <div class="flex h-screen"> <!--CONTENT CONTAINER-->
-        <div id="content" class="h-screen overflow-y-auto transition-all duration-500 ml-[20%]">
+        <div id="content" class="w-full overflow-auto transition-all duration-500 ml-[20%]">
             <main class="m-8">
                 {{$slot}}  <!--CONTENT LOAD-->
             </main>

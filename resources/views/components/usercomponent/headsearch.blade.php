@@ -7,7 +7,7 @@
             </div>
             <div class="flex items-center space-x-4">
                 <div>
-                    <input type="search" class=" bg-cb border-[3px] rounded-lg h-[40px] w-[300px] text-black">
+                    <input wire:model.debounce.300ms='q' type="search" class=" bg-cb border-[3px] rounded-lg h-[40px] w-[300px] text-black">
                 </div>
                 <div class="px-3 py-2 font-bold bg-orange-400 rounded-lg w-fit h-fit hover:ring-1 ring-cb hover:bg-pink-500 bg-opacity-90 bg-gradient-to-t from-orange-500 to-pink-500">
                     <button>Search</button>

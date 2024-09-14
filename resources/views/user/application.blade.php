@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="flex justify-center flex-1 w-full mb-0 mt-[10%] h-fit xl:my-10">
-                <x-usercomponent.appform />
+                <livewire:guest.app-form />
             </div>
             <div class="w-full h-[20%] bg-black mt-[5%] bg-opacity-50 flex justify-between px-10">
                 <div>
